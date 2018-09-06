@@ -1,6 +1,6 @@
 {
   "name": "react-native-fix-android-links",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Ray Deck",
   "license": "ISC",
   "description": "RN Plugin to fix symlinked android libraries to enable better dev experience",
