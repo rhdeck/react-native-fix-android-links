@@ -5,9 +5,6 @@
   "license": "ISC",
   "description": "RN Plugin to fix symlinked android libraries to enable better dev experience",
   "rnpm": {
-    "plugin": "plugin.js",
-    "commands": {
-      "postlink": "node node_modules/react-native-fix-android-links/postlink.js"
-    }
+    "plugin": "plugin.js"
   }
 }
