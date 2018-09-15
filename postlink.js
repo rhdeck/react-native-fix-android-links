@@ -3,7 +3,7 @@ const fs = require("fs");
 const Path = require("path");
 const sgpath = Path.join(process.cwd(), "android", "settings.gradle");
 if (!fs.existsSync(sgpath)) {
-  ("The settings.gradle file cannot be found. Aborting");
+  console.log("The settings.gradle file cannot be found. Aborting");
   process.exit();
 }
 const text = fs.readFileSync(sgpath, { encoding: "UTF8" });
@@ -28,3 +28,4 @@ const outlines = lines.map(line => {
 });
 const out = outlines.join("\n");
 fs.writeFileSync(sgpath, out);
+console.log("Updated", sgpath);
